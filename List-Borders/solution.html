@@ -22,7 +22,6 @@
     /* Display each table in a row with inline-block */
     li {
       display:inline-block;
-      width:300px;
     }
     /* Put a rounded (20px) solid black border box around the timestables div */
     #timestables {
@@ -30,7 +29,7 @@
       border-radius:20px;
     }
     /* Put a rounded (10px) solid black border box around EACH times table FIX!*/
-    ol {
+    #tables {
       border: 2px solid black;
       border-radius:20px;
     }
@@ -39,9 +38,11 @@
       border-bottom: 2px solid red;
     }
     /* go night mode on hovers over each timestable, but not the parent  */
-  li:hover {
+  :hover {
     background-color:black;
     color:white;
+    border: 2px solid black;
+    border-radius:20px;
   }
     /* 20 px space below the last equation in each table */
   #tables {
@@ -52,13 +53,25 @@
     margin-top:20px;
   }
      /* subtract 20px from left margins of each child table, add it to the right margins */
-  ol {
-    margin: 20, 0;
-  }
+#tables {
+  margin-left:0;
+  margin-right:40px;  
+}
     /* put 25px padding at the bottom of the parent  */
 #timestables {
   padding-bottom:25px;
+  padding-left: 50px;
+  padding-right: 20px;
 }
+
+#timestables {
+  width:1000px;
+}
+
+ol {
+  width:600px;
+}
+
    </style>
 </head>
 
