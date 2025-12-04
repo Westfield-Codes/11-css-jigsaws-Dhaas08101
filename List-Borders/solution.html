@@ -28,8 +28,8 @@
       border: 2px solid black;
       border-radius:20px;
     }
-    /* Put a rounded (10px) solid black border box around EACH times table FIX!*/
-    #tables {
+    /* Put a rounded (10px) solid black border box around EACH times table*/
+    #tables ol {
       border: 2px solid black;
       border-radius:20px;
     }
@@ -38,38 +38,40 @@
       border-bottom: 2px solid red;
     }
     /* go night mode on hovers over each timestable, but not the parent  */
-  :hover {
+  #tables ol:hover {
     background-color:black;
     color:white;
     border: 2px solid black;
     border-radius:20px;
   }
     /* 20 px space below the last equation in each table */
-  #tables {
+  #tables ol {
   padding-bottom:20px;
   }
     /* add a top margin of 20px on each table, but not the parent */
   #tables {
     margin-top:20px;
+    margin:auto;
   }
      /* subtract 20px from left margins of each child table, add it to the right margins */
-#tables {
-  margin-left:0;
-  margin-right:40px;  
-}
+  #tables ol {
+    padding-left:20px;
+    padding-right:20px;
+  }
     /* put 25px padding at the bottom of the parent  */
 #timestables {
   padding-bottom:25px;
-  padding-left: 50px;
-  padding-right: 20px;
-}
-
-#timestables {
-  width:1000px;
+  width:800px;
+  margin:auto;
 }
 
 ol {
   width:600px;
+}
+
+h4 {
+  padding-left:20px;
+  padding-right:20px;
 }
 
    </style>
