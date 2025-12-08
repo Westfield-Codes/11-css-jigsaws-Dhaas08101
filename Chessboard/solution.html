@@ -13,12 +13,20 @@
 
       /* Combine them below (erasing the rules above) */
 
-        #board li ol.odd li, #board li ol.even li 
-          background-color:#f2f2f2
+        /* #board li ol.odd li, #board li ol.even li 
+          background-color:#f2f2f2 */
+        
+      
+      
+      /* #board li:nth-child(even) {
+          background-color:#f2f2f2;
+        } */
+
+        #board li ol.odd li:nth-child(odd) {
+          background-color:#f2f2f2;
         }
-      
-      
-      #board li:nth-child(even) {
+
+        #board li ol.even li:nth-child(even) {
           background-color:#f2f2f2;
         }
 
